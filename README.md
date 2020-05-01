@@ -1,5 +1,3 @@
-
-Auctions
 Auctions is a Bukkit/Spigot plugin that allows players on servers to auction off their items for money. Current features include:
 
 Sealed auctions
