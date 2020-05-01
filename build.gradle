@@ -1,0 +1,42 @@
+group 'play.dahp.us.auctions'
+version '1.0'
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  
+  dependencies {
+    classpath "com.github.jengelman.gradle.plugins:shadow:2.0.4"
+  }
+}
+
+apply plugin: 'java'
+apply plugin: "com.github.johnrengelman.shadow"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    
+    maven { url "https://hub.spigotmc.org/nexus/content/[Name Felix had here]/snapshots/" }
+    maven { url "http://repo.extendedclip.com/content/[Name Felix had here]/placeholderapi/" }
+    maven { url "https://oss.sonatype.org/content/[Name Felix had here]/snapshots" }
+    maven { url "http://maven.sk89q.com/repo/" }
+}
+
+dependencies {
+    compileOnly 'me.clip:placeholderapi:2.9.2'
+    compileOnly 'org.spigotmc:spigot-api:1.14-R0.1-SNAPSHOT'
+    compileOnly files('libs/Vault v1.7.1.jar')
+    compileOnly files('libs/Herochat.jar')
+    
+    compileOnly 'com.google.guava:guava:18.0'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+}
+
+shadowJar {
+    archiveName "Auctions v1.0.jar"
+}
