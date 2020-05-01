@@ -7,7 +7,7 @@ Herochat channel integration
 Broadcasts through the action bar
 Auction queues
 Spam reduction methods
-Auctions is open source and is available under the GNU General Public License v3.
+Auctions is open source.
 
 Compiling
 This fork is written for Java 8 and can be compiled through the use of Gradle. To compile this fork:
