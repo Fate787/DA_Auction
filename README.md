@@ -11,7 +11,7 @@ Compiling
 This fork is written for Java 8 and can be compiled through the use of Gradle. To compile this fork:
 
 Install Gradle
-Clone the repository using git clone https://github.com/Kamilkime/Auctions-1.13.2.git
+Clone the repository using git clone: https://github.com/Fate787/DA_Auction.git
 Compile with gradle using gradle shadowJar
 Usage
 The subcommands for this plugin are as follows:
